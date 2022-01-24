@@ -6,3 +6,6 @@ The Super Universe is an application where you'll be able to search your favorit
 
 # Entity Relationship
 - [Click Here](https://www.figma.com/file/k18SMvZMTD0jBr7P64JLpV/Untitled?node-id=0%3A1)
+
+# React Components Heirarchy
+- [Click Here](https://whimsical.com/component-hierarchy-JTVRZ35V31oro5GcV6wCut)
