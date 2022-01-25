@@ -13,12 +13,19 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+from dotenv import load_dotenv
+load_dotenv()
+print(os.getenv('PRODUCTION'))
+
+IS_PRODUCTION = os.getenv('PRODUCTION') == 'True'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+if IS_PRODUCTION:
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+else:
+    BASE_DIR = Path(__file__).resolve().parent.parent
 
- #BASE_DIR = Path(__file__).resolve().parent.parent
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -30,7 +37,7 @@ SECRET_KEY = 'django-insecure-tg+&!h&s%20t&*1ix9m#jvevi%^u3z_6g$2b*_8z@6f$lt)=3%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['super-database.herokuapp.com']
+ALLOWED_HOSTS = ['super-database.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -82,21 +89,23 @@ WSGI_APPLICATION = 'super.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'characters',
-        'USER': 'characters_admin',
-        'PASSWORD': 'password',
-        'HOST': 'localhost'
+if IS_PRODUCTION:
+    DATABASES = {
+        'default': dj_database_url.config(conn_max_age=600, ssl_require=True)
     }
-}
-"""
-DATABASES = {
-    'default': 
-     dj_database_url.config(conn_max_age=600, ssl_require=True)
-}
+
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'characters',
+            'USER': 'characters_admin',
+            'PASSWORD': 'password',
+            'HOST': 'localhost'
+        }
+    }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -132,12 +141,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-# STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),
-)
-
+if IS_PRODUCTION:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),
+    )
+else:
+  STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
