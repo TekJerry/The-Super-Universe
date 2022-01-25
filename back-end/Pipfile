@@ -10,6 +10,7 @@ djangorestframework = "*"
 django-extensions = "*"
 gunicorn = "*"
 whitenoise = "*"
+dj-database-url = "*"
 
 [dev-packages]
 
