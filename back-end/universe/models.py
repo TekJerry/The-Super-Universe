@@ -22,7 +22,7 @@ class Character(models.Model):
   is_hero = models.BooleanField()
   background = models.CharField(max_length=256)
   origin = models.CharField(max_length=256)
-  publisher = models.ForeignKeyI(Publisher, on_delete=models.CASCADE, related_name='publisher')
+  publisher = models.ForeignKey(Publisher, on_delete=models.CASCADE, related_name='publisher')
 
   def __str__(self):
     return self.code_name
