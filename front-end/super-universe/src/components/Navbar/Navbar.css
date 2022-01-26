@@ -1,0 +1,31 @@
+.link-container {
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  height: 15vh;
+}
+
+.home-link {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.hero-link {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.villain-link {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.create-link {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.sign-link {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}

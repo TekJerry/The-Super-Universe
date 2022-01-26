@@ -1,0 +1,18 @@
+.layout {
+  grid-template-areas:
+    "a a a a"
+    "b b b b"
+    "c c c c";
+}
+
+.nav {
+  grid-area: a;
+}
+
+.body {
+  grid-area: b;
+}
+
+.foot {
+  grid-area: c;
+}
