@@ -17,6 +17,7 @@ from dotenv import load_dotenv
 load_dotenv()
 print(os.getenv('PRODUCTION'))
 
+SECRET_KEY = os.getenv('SECRET_KEY')
 IS_PRODUCTION = os.getenv('PRODUCTION') == 'True'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
