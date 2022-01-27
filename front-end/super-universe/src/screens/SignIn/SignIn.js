@@ -1,7 +1,13 @@
-import React from 'react';
+import React from "react";
+import Layout from "../../components/Layout/Layout";
+import './SignIn.css'
 
 export default function SignIn() {
   return (
-    <div><div className='sign-in'/></div>
-  )
-  }
+    <Layout>
+      <div className="sign-container">
+        <div className="sign-in"></div>
+      </div>
+    </Layout>
+  );
+}

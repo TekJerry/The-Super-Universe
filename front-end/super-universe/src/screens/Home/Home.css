@@ -1,0 +1,70 @@
+.home-big {
+}
+
+.hero-villain {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
+}
+
+.pic-1 {
+  border: 4px solid black;
+  background: green;
+  height: 25vh;
+  overflow: hidden;
+  margin: 4px;
+}
+
+.hero-villain img {
+  width: 50vw;
+}
+
+.pic-2 {
+  border: 4px solid black;
+  background: green;
+  height: 25vh;
+  overflow: hidden;
+  margin: 4px;
+}
+
+.desc-container {
+  display: flex;
+}
+
+.desc {
+  border: 4px solid black;
+  background: green;
+  height: 25vh;
+  width: 39vw;
+  margin: 4px;
+}
+
+.are-you {
+  border: 4px solid black;
+  background: green;
+  height: 25vh;
+  width: 59vw;
+  margin: 4px;
+}
+
+.desc2-container {
+  display: flex;
+}
+
+.desc2 {
+  border: 4px solid black;
+  background: green;
+  height: 25vh;
+  width: 59vw;
+  margin: 4px;
+}
+
+.create-your-own {
+  border: 4px solid black;
+  background: green;
+  height: 25vh;
+  width: 39vw;
+  margin: 4px;
+}

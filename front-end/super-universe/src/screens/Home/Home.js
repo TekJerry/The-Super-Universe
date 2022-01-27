@@ -7,8 +7,8 @@ export default function Home() {
     <Layout>
       <div className="home-big">
         <div className="hero-villain">
-          <img />
-          <img />
+          <div className="pic-1"><img className="batman" src="https://i.imgur.com/kwhutKl.jpg" alt="batman"/></div>
+          <div className="pic-2"><img className="joker" src="https://i.imgur.com/z48GwCu.jpg" alt="joker"/></div>
         </div>
         <div className="desc-container">
           <div className="desc"></div>

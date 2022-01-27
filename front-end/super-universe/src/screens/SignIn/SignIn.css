@@ -1,0 +1,13 @@
+.sign-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in {
+  background: blue;
+  border: 3px solid black;
+  height: 60vh;
+  margin: 8%;
+  width: 40vw;
+  border-radius: 20px;
+}

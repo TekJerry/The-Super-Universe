@@ -1,0 +1,26 @@
+.main-create-container {
+}
+
+.big-title {
+  border: 3px solid black;
+  height: 20vh;
+  margin: 4px;
+}
+
+.fer-container {
+  display: flex;
+}
+
+.create-info {
+  border: 3px solid black;
+  height: 58vh;
+  width: 25vw;
+  margin: 4px;
+}
+
+.form {
+  border: 3px solid black;
+  height: 58vh;
+  width: 73vw;
+  margin: 4px;
+}
