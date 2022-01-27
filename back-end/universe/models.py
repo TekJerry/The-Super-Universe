@@ -16,7 +16,7 @@ class Character(models.Model):
   weapon = models.CharField(max_length=256)
   fight_ability = models.CharField(max_length=256)
   real_name = models.CharField(max_length=256)
-  dob = models.DateField(blank=True. null=True)
+  dob = models.DateField(blank=True, null=True)
   img_url = models.CharField(max_length=256)
   is_villain = models.BooleanField(blank=True, null=True)
   is_hero = models.BooleanField(blank=True, null=True)
