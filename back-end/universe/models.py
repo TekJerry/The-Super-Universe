@@ -16,12 +16,12 @@ class Character(models.Model):
   weapon = models.CharField(max_length=256)
   fight_ability = models.CharField(max_length=256)
   real_name = models.CharField(max_length=256)
-  dob = models.DateField()
+  dob = models.DateField(blank=True)
   img_url = models.CharField(max_length=256)
-  is_villain = models.BooleanField()
-  is_hero = models.BooleanField()
-  background = models.CharField(max_length=256)
-  origin = models.CharField(max_length=256)
+  is_villain = models.BooleanField(blank=True)
+  is_hero = models.BooleanField(blank=True)
+  background = models.CharField(max_length=1200)
+  origin = models.CharField(max_length=1200)
   publisher = models.ForeignKey(Publisher, on_delete=models.CASCADE, related_name='characters')
 
   def __str__(self):
