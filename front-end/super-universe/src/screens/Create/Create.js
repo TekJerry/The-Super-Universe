@@ -8,14 +8,14 @@ import { useNavigate } from "react-router-dom";
 export default function Create() {
 
 
-  const [codeName, setCodeName] = useState("");
+  const [code_name, setCodeName] = useState("");
   const [weapon, setWeapon] = useState("");
-  const [fightAbility, setFightAbility] = useState("");
-  const [realName, setRealName] = useState("");
-  const [dob, setDob] = useState("");
-  const [imgUrl, setImgUrl] = useState("");
-  const [isHero, setIsHero] = useState("");
-  const [isVillain, setIsVillain] = useState("");
+  const [fight_ability, setFightAbility] = useState("");
+  const [real_name, setRealName] = useState("");
+  // const [dob, setDob] = useState("");
+  const [img_url, setImgUrl] = useState("");
+  // const [is_hero, setIsHero] = useState("");
+  // const [is_villain, setIsVillain] = useState("");
   const [background, setBackground] = useState("");
   const [origin, setOrigin] = useState("");
   const navigate = useNavigate();
@@ -23,24 +23,22 @@ export default function Create() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     const newCharacter = {
-      codeName,
+      code_name,
       weapon,
-      fightAbility,
-      realName,
-      dob,
-      imgUrl,
-      isHero,
-      isVillain,
+      fight_ability,
+      real_name,
+      // dob,
+      img_url,
+      // is_hero,
+      // is_villain,
       background,
       origin,
 
     }
-
-    const response = await postCharacter(newCharacter)
-    if (response) {
+  await postCharacter(newCharacter)
       navigate('/')
-    }
   }
+
   return (
     <Layout>
       <div className="main-create-container">
@@ -49,16 +47,16 @@ export default function Create() {
           <div className="create-info"></div>
           <div className="form">
             <form onSubmit={handleSubmit} className="input-form" id="character-form">
-              <input type="text" placeholder="Type Code name here..." onChange={(e) => setCodeName(e.target.value) }/>
-              <input type="text" placeholder="Type special/favorite weapon here..." onChange={(e) => setWeapon(e.target.value) }/>
-              <input type="text" placeholder="Type fight ability here..." onChange={(e) => setFightAbility(e.target.value)}/>
-              <input type="text" placeholder="Type real name here..." onChange={(e) => setRealName(e.target.value) }/>
-              <input type="text" placeholder="Type date of birth here..." onChange={(e) => setDob(e.target.value) }/>
-              <input type="text" placeholder="Type image url here..." onChange={(e) => setImgUrl(e.target.value)}/>
-              <input type="text" placeholder="If character is a Hero type 'true' here..." onChange={(e) => setIsHero(e.target.value)}/>
-              <input type="text" placeholder="If character is a Villain type 'true' here..." onChange={(e) => setIsVillain(e.target.value)}/>
-              <input type="text" placeholder="Type their background here..." onChange={(e) => setBackground(e.target.value)}/>
-              <input type="text" placeholder="Type their origin here..." onChange={(e) => setOrigin(e.target.value)} />
+              <input type="text" value={code_name} placeholder="Type Code name here..." onChange={(e) => setCodeName(e.target.value) }/>
+              <input type="text" value={weapon} placeholder="Type special/favorite weapon here..." onChange={(e) => setWeapon(e.target.value) }/>
+              <input type="text" value={fight_ability} placeholder="Type fight ability here..." onChange={(e) => setFightAbility(e.target.value)}/>
+              <input type="text" value={real_name} placeholder="Type real name here..." onChange={(e) => setRealName(e.target.value) }/>
+              {/* <input type="text" placeholder="Type date of birth here..." onChange={(e) => setDob(e.target.value) }/> */}
+              <input type="text" value={img_url} placeholder="Type image url here..." onChange={(e) => setImgUrl(e.target.value)}/>
+              {/* <input type="text" placeholder="If character is a Hero type 'true' here..." onChange={(e) => setIsHero(e.target.value)}/> */}
+              {/* <input type="text" placeholder="If character is a Villain type 'true' here..." onChange={(e) => setIsVillain(e.target.value)}/> */}
+              <input type="text" value={background} placeholder="Type their background here..." onChange={(e) => setBackground(e.target.value)}/>
+              <input type="text" value={origin} placeholder="Type their origin here..." onChange={(e) => setOrigin(e.target.value)} />
               <button>Add My Character</button>
             </form>
           </div>

@@ -10,6 +10,6 @@ export const grabCharacters = async () => {
 }
 
 export const postCharacter = async (body) => {
-  const response = await axios.post(BASE_URL, { fields: body })
+  const response = await axios.post(BASE_URL, body)
   return response.data
 }
