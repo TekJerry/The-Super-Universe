@@ -29,7 +29,7 @@ export const getCharacter = async (id) => {
 
 export const updateCharacter = async (id, character) => {
   try {
-    const res = await axios.put(`https://super-database.herokuapp.com/characters/${id}`, character);
+    const res = await axios.put(`https://super-database.herokuapp.com/characters/${id}/`, character);
     return res.data;
   } catch (error) {
     throw error;

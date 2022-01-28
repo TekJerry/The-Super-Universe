@@ -13,7 +13,7 @@ export default function Heroes() {
   useEffect(() => {
     const getApi = async () => {
       const res = await grabCharacters();
-      console.log(res)
+      console.log(res);
       setCharacters(res);
     };
     getApi();
@@ -23,8 +23,7 @@ export default function Heroes() {
     e.preventDefault();
     setCodeName(codes);
   };
-
-  console.log(codeName.id)
+console.log(codeName.id)
   return (
     <Layout>
       <div className="big-container-hero">
@@ -77,6 +76,11 @@ export default function Heroes() {
             <div className="dob">{codeName.dob}</div>
             <div className="background">{codeName.background}</div>
             <div className="origin">{codeName.origin}</div>
+            <div className="multiple-btn">
+              <Link to={`/character/edit/${codeName.id}`}>
+                <button className="edit-character">Edit Character</button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

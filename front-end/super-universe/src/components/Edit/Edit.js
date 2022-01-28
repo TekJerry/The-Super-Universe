@@ -20,6 +20,7 @@ export default function Edit() {
   });
 
   const params = useParams()
+  
   useEffect(() => {
     const findCharacter = async () => {
       const foundCharacter = await getCharacter(params.id)
@@ -28,7 +29,9 @@ export default function Edit() {
     findCharacter()
   }, [])
   
-  const handleSubmit = async (e) => {
+  console.log(character)
+
+  const handleSubmit = async (e, character) => {
     e.preventDefault()
     await updateCharacter(params.id, character)
   }
@@ -41,7 +44,6 @@ export default function Edit() {
     })
   }
 
-
   return (
     <Layout>
       <div>
@@ -49,6 +51,7 @@ export default function Edit() {
         <h1 className='edit-character-title'>Edit Character</h1>
         <h5>Fill in the form below to make changes to a character.</h5>
         <input
+        type="text"
           className="code-name-input"
           placeholder="Update Code Name"
           value={character.code_name}
@@ -56,6 +59,7 @@ export default function Edit() {
           onChange={(e) => handleChange(e)}
         />
         <input
+        type="text"
           className="weapon-input"
           placeholder="Update weapon"
           value={character.weapon}
@@ -63,6 +67,7 @@ export default function Edit() {
           onChange={(e) => handleChange(e)}
         />
         <input
+        type="text"
           className="fight-ability-input"
           placeholder="Update fight ability"
           value={character.fight_ability}
@@ -70,6 +75,7 @@ export default function Edit() {
           onChange={(e) => handleChange(e)}
         />
         <input
+        type="text"
           className="real-name-input"
           placeholder="Update Real Name"
           value={character.real_name}
@@ -77,6 +83,7 @@ export default function Edit() {
           onChange={(e) => handleChange(e)}
         />
         <input
+        type="text"
           className="dob-input"
           placeholder="Update Date of birth"
           value={character.dob}
@@ -84,6 +91,7 @@ export default function Edit() {
           onChange={(e) => handleChange(e)}
         />  
         <input
+        type="text"
           className="img-url-input"
           placeholder="Update Character Image"
           value={character.img_url}
@@ -91,13 +99,15 @@ export default function Edit() {
           onChange={(e) => handleChange(e)}
           />  
           <input
+          type="text"
           className="is-villan-input"
           placeholder="Update Is Character A Villain"
           value={character.is_villain}
-          name="is_villan"
+          name="is_villain"
           onChange={(e) => handleChange(e)}
           />  
           <input
+          type="text"
           className="is-hero-input"
           placeholder="Update Is Character A Villain"
           value={character.is_hero}
@@ -105,6 +115,7 @@ export default function Edit() {
           onChange={(e) => handleChange(e)}
           />  
           <input
+          type="text"
           className="background-input"
           placeholder="Update Character Background"
           value={character.background}
@@ -112,6 +123,7 @@ export default function Edit() {
           onChange={(e) => handleChange(e)}
           />  
           <input
+          type="text"
           className="origin-input"
           placeholder="Update Item Origin"
           value={character.origin}

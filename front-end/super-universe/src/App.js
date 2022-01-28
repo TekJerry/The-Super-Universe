@@ -5,6 +5,7 @@ import Heroes from './screens/Heroes/Heroes';
 import Villains from './screens/Villains/Villains';
 import Home from './screens/Home/Home';
 import SignIn from './screens/SignIn/SignIn';
+import Edit from './components/Edit/Edit';
 function App() {
 
 
@@ -16,7 +17,8 @@ function App() {
         <Route path="/heroes" element={<Heroes/>} />
         <Route path="/villains" element={<Villains/>} />
         <Route path="/create" element={<Create/>} />
-        <Route path="/signin" element={<SignIn/>} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/character/edit/:id" element={<Edit />} />
       </Routes>
       
       </div>
