@@ -4,6 +4,7 @@ import "./Heroes.css";
 import { useEffect, useState } from "react";
 import { grabCharacters } from "../../services/index";
 import { Link } from "react-router-dom";
+import Delete from "../../components/Delete/Delete";
 
 export default function Heroes() {
   const [characters, setCharacters] = useState([]);
@@ -23,7 +24,7 @@ export default function Heroes() {
     e.preventDefault();
     setCodeName(codes);
   };
-console.log(codeName.id)
+console.log(codeName)
   return (
     <Layout>
       <div className="big-container-hero">

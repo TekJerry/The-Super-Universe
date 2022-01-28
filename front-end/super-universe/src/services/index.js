@@ -35,3 +35,12 @@ export const updateCharacter = async (id, character) => {
     throw error;
   }
 };
+
+export const deleteCharacter = async (id) => {
+  try {
+    const res = await axios.delete(`https://super-database.herokuapp.com/characters/${id}/`);
+    return res.data;
+  } catch (error) {
+    throw error;
+  }
+};

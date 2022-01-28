@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getCharacter, updateCharacter } from "../../services/index";
+import Delete from "../Delete/Delete";
 import Layout from "../Layout/Layout";
 import "./Edit.css";
 
@@ -29,10 +30,11 @@ export default function Edit() {
     findCharacter()
   }, [])
   
-  console.log(character)
+  // console.log(character)
 
-  const handleSubmit = async (e, character) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+    console.log(params.id, character)
     await updateCharacter(params.id, character)
   }
 
@@ -47,7 +49,7 @@ export default function Edit() {
   return (
     <Layout>
       <div>
-      <form className="edit-characters">
+      <form className="edit-characters" onSubmit={handleSubmit}>
         <h1 className='edit-character-title'>Edit Character</h1>
         <h5>Fill in the form below to make changes to a character.</h5>
         <input
@@ -130,12 +132,8 @@ export default function Edit() {
           name="origin"
           onChange={(e) => handleChange(e)}
         />  
-          
-      <div className='multiple-btn'>
-      <button className='edit-character-btn' onClick={(e) => handleSubmit(e)}>Edit</button>
-      </div>
         </form>
-        
+        <Delete/>
 
       </div>
     </Layout>
