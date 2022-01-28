@@ -17,3 +17,21 @@ export const postCharacter = async (body) => {
     throw error;
   }
 }
+
+export const getCharacter = async (id) => {
+  try {
+    const res = await axios.get(`https://super-database.herokuapp.com/characters/${id}`);
+    return res.data;
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const updateCharacter = async (id, product) => {
+  try {
+    const res = await axios.put(`https://super-database.herokuapp.com/characters/${id}`, product);
+    return res.data;
+  } catch (error) {
+    throw error;
+  }
+};
