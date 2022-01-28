@@ -35,18 +35,44 @@
 
 .desc {
   border: 4px solid black;
-  background: green;
+  background: blue;
   height: 25vh;
   width: 39vw;
   margin: 4px;
 }
 
+.desc img {
+  width: 39vw;
+  height: 25vh;
+  overflow: hidden;
+}
+
+.desc p {
+  position: absolute;
+  top: 44.2%;
+  width: 31vw;
+  left: 5%;
+  font-size: 31px;
+  font-weight: 1000;
+  height: 20vh;
+  padding: 3px;
+}
+
 .are-you {
   border: 4px solid black;
-  background: green;
+  background: red;
   height: 25vh;
   width: 59vw;
   margin: 4px;
+}
+
+p {
+  font-family: "Permanent Marker", cursive;
+}
+
+.are-you img {
+  width: 30vw;
+  height: 22vh;
 }
 
 .desc2-container {
@@ -55,7 +81,7 @@
 
 .desc2 {
   border: 4px solid black;
-  background: green;
+  background: yellow;
   height: 25vh;
   width: 59vw;
   margin: 4px;
@@ -63,7 +89,7 @@
 
 .create-your-own {
   border: 4px solid black;
-  background: green;
+  background: whitesmoke;
   height: 25vh;
   width: 39vw;
   margin: 4px;
