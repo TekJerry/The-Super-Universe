@@ -42,7 +42,7 @@ export default function Villains() {
             <div className="container-search-hero">
               {characters
                 .filter((val) => {
-                  if (val.is_villain) {
+                  if (val.is_villain === "true" || val.is_villain === "True") {
                     return val.code_name
                       .toLowerCase()
                       .includes(searchTerm.toLowerCase());
@@ -52,7 +52,7 @@ export default function Villains() {
                   return (
                     <div className="relative-search" key={key}>
                       <div key={val.id}>
-                        <button onClick={(e) => handleClick(e, val)}>
+                        <button className="results-search" onClick={(e) => handleClick(e, val)}>
                           {val.code_name}
                         </button>
                       </div>

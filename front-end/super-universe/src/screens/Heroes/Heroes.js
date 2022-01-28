@@ -44,7 +44,7 @@ console.log(codeName)
             <div className="container-search-hero">
               {characters
                 .filter((val) => {
-                  if (val.is_hero) {
+                  if (val.is_hero === "true" || val.is_hero === "True") {
                     return val.code_name
                       .toLowerCase()
                       .includes(searchTerm.toLowerCase());
@@ -54,7 +54,7 @@ console.log(codeName)
                   return (
                     <div className="relative-search" key={key}>
                       <div key={val.id}>
-                        <button onClick={(e) => handleClick(e, val)}>
+                        <button className="results-search" onClick={(e) => handleClick(e, val)}>
                           {val.code_name}
                         </button>
                       </div>
