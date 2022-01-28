@@ -13,7 +13,7 @@ export default function Heroes() {
   useEffect(() => {
     const getApi = async () => {
       const res = await grabCharacters();
-      console.log(res);
+      console.log(res)
       setCharacters(res);
     };
     getApi();
@@ -24,6 +24,7 @@ export default function Heroes() {
     setCodeName(codes);
   };
 
+  console.log(codeName.id)
   return (
     <Layout>
       <div className="big-container-hero">
