@@ -34,10 +34,17 @@
   width: 63vw;
   margin: 5px;
   display: flex;
+  background: url("https://i.imgur.com/BfbX2XU.png") left,
+    url("https://i.imgur.com/JDSXwdL.jpg") left;
+  background-repeat: no-repeat;
+  background-size: 80vw 110vh, 100vw 100vh;
 }
 
 .hero-details img {
   height: 73vh;
-  margin: 5px;
-  border: 2px blue solid;
+  margin: 10px;
+}
+
+.hero-details div {
+  margin-top: 10px;
 }

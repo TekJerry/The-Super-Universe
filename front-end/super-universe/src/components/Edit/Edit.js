@@ -131,7 +131,8 @@ export default function Edit() {
           value={character.origin}
           name="origin"
           onChange={(e) => handleChange(e)}
-        />  
+          /> 
+        <button type="submit">edit</button>  
         </form>
         <Delete/>
 
