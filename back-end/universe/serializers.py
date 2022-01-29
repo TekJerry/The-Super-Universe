@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from universe.models import Publisher, Character
+from django.contrib.auth.models import User
 
 class PublisherSerializer(serializers.HyperlinkedModelSerializer):
   characters = serializers.StringRelatedField(many=True, read_only=True)
@@ -11,3 +12,11 @@ class CharacterSerializer(serializers.HyperlinkedModelSerializer):
   class Meta: 
     model = Character
     fields = ['id','code_name', 'weapon', 'fight_ability', 'real_name', 'dob', 'img_url', 'is_villain', 'is_hero', 'background', 'origin', 'publisher']
+
+class UserSerializer(serializers.ModelSerializer):
+  def create(self, validated_data):
+      return User.objects.create_superuser(**validated_data)
+  
+  class Meta:
+      model = User
+      fields = ['username', 'password', 'email']
