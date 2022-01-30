@@ -6,15 +6,28 @@
 }
 
 .search-villain {
-  background: red;
+  background: url("https://i.imgur.com/aetLSnC.jpg") no-repeat;
+  background-size: 38vw 25vh;
   height: 25vh;
   border: 4px solid black;
   width: 35vw;
   margin: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar-villain {
+  border: black 5px solid;
+  height: 5vh;
+  width: 20vw;
+  margin-top: 9vh;
+  font-size: 30px;
+  font-family: "Permanent Marker", cursive;
 }
 
 .results-maybe-villain {
-  background: red;
+  background: url("https://i.imgur.com/pPtBntW.jpg") center right no-repeat;
+  background-size: 60vw;
   height: 25vh;
   border: 4px solid black;
   width: 35vw;
@@ -22,7 +35,10 @@
 }
 
 .suggestions-villain {
-  background: red;
+  background: url("https://i.imgur.com/I8wfIdv.png") no-repeat center left,
+    url("https://i.imgur.com/7hkymGi.png") no-repeat center right,
+    url("https://i.imgur.com/KD6drix.jpg") no-repeat;
+  background-size: 15vw 22vh, 15vw 22vh, 38vw 25vh;
   height: 25vh;
   border: 4px solid black;
   width: 35vw;
@@ -34,11 +50,19 @@
   width: 63vw;
   margin: 5px;
   display: flex;
+  background: url("https://i.imgur.com/BfbX2XU.png") left,
+    url("https://i.imgur.com/bjDO3oT.jpg") left;
+  background-repeat: no-repeat;
+  background-size: 80vw 110vh, 100vw 100vh;
 }
 
 .villain-details img {
   height: 73vh;
   margin: 5px;
+}
+
+.villain-details div {
+  margin-top: 10px;
 }
 
 .question {
@@ -54,4 +78,19 @@
 
 .background span {
   font-size: 20px;
+}
+
+.multiple-btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 30vw;
+}
+.edit-character {
+  border: black solid 3px;
+  background: none;
+  height: 3vh;
+  width: 13vw;
+  font-size: 18px;
+  font-family: "Permanent Marker", cursive;
+  box-shadow: 10px 5px;
 }

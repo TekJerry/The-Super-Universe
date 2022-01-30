@@ -49,66 +49,76 @@ export default function Create() {
               id="character-form"
             >
               <input
+              className="create-input"
                 type="text"
                 value={code_name}
                 placeholder="Type Code name here..."
                 onChange={(e) => setCodeName(e.target.value)}
               />
               <input
+              className="create-input"
                 type="text"
                 value={weapon}
                 placeholder="Type special/favorite weapon here..."
                 onChange={(e) => setWeapon(e.target.value)}
               />
               <input
+              className="create-input"
                 type="text"
                 value={fight_ability}
                 placeholder="Type fight ability here..."
                 onChange={(e) => setFightAbility(e.target.value)}
               />
               <input
+              className="create-input"
                 type="text"
                 value={real_name}
                 placeholder="Type real name here..."
                 onChange={(e) => setRealName(e.target.value)}
               />
               <input
+              className="create-input"
                 type="text"
                 value={dob}
                 placeholder="Type date of birth here..."
                 onChange={(e) => setDob(e.target.value)}
               />
               <input
+              className="create-input"
                 type="text"
                 value={img_url}
                 placeholder="Type image url here..."
                 onChange={(e) => setImgUrl(e.target.value)}
               />
               <input
+              className="create-input"
                 type="text"
                 value={is_hero}
                 placeholder="If character is a Hero type 'true' here..."
                 onChange={(e) => setIsHero(e.target.value)}
               />
               <input
+              className="create-input"
                 type="text"
                 value={is_villain}
                 placeholder="If character is a Villain type 'true' here..."
                 onChange={(e) => setIsVillain(e.target.value)}
               />
               <input
+              className="create-input"
                 type="text"
                 value={background}
                 placeholder="Type their background here..."
                 onChange={(e) => setBackground(e.target.value)}
               />
               <input
+              className="create-input"
                 type="text"
                 value={origin}
                 placeholder="Type their origin here..."
                 onChange={(e) => setOrigin(e.target.value)}
               />
-              <button>Add My Character</button>
+              <button className="add-character" >Add My Character</button>
             </form>
           </div>
         </div>

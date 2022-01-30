@@ -5,6 +5,8 @@
   border: 3px solid black;
   height: 20vh;
   margin: 4px;
+  background: url("https://i.imgur.com/oXVSdMK.jpg") no-repeat center;
+  background-size: 100vw 70vh;
 }
 
 .fer-container {
@@ -16,6 +18,7 @@
   height: 58vh;
   width: 25vw;
   margin: 4px;
+  background: url("https://i.imgur.com/bucUycy.jpg");
 }
 
 .form {
@@ -23,4 +26,44 @@
   height: 58vh;
   width: 73vw;
   margin: 4px;
+  background: url("https://i.imgur.com/6AoI2In.jpg");
+  background-size: 80vw 60vh;
+}
+
+.input-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.create-input {
+  margin: 10px;
+  height: 4vh;
+  width: 22vw;
+  font-size: 25px;
+  font-family: "Permanent Marker", cursive;
+  box-shadow: 10px 8px;
+}
+
+.add-character {
+  border: 3px solid lime;
+  background: rgb(162, 0, 255);
+  margin-left: 5vw;
+  width: 10vw;
+  box-shadow: 10px 8px;
+  margin-top: 10px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+}
+
+.add-character:hover {
+  border: 3px solid rgb(162, 0, 255);
+  background: rgb(38, 255, 85);
+  margin-left: 5vw;
+  width: 10vw;
+  box-shadow: 10px 8px;
+  margin-top: 10px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+  cursor: pointer;
 }

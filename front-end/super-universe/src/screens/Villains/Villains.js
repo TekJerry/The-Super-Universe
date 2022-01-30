@@ -31,6 +31,7 @@ export default function Villains() {
           <div className="search-villain">
             {" "}
             <input
+              className="search-bar-villain"
               type="text"
               placeholder="Search..."
               onChange={(e) => {
