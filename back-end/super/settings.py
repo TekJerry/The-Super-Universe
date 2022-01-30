@@ -163,4 +163,4 @@ REST_FRAMEWORK= {
 }
 
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:3000", "http://localhost:3001", "https://61f70bdacb2dcf7e227cd2c7--cocky-noether-81384f.netlify.app/"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:3000", "http://localhost:3001", "https://61f712154c4a4643f81dbc51--cocky-noether-81384f.netlify.app/"]
