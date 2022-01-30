@@ -1,13 +1,64 @@
 .sign-container {
   display: flex;
   justify-content: center;
+  background: url("https://i.imgur.com/2DlFbjo.jpg") no-repeat center, #4b0082;
 }
 
 .sign-in {
-  background: blue;
+  background: rgb(128, 3, 231);
   border: 3px solid black;
   height: 60vh;
   margin: 8%;
   width: 40vw;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.log-in {
+  font-size: 40px;
+  font-family: "Permanent Marker", cursive;
+  width: 10vw;
+  height: 10vh;
+  justify-content: center;
+  display: flex;
+}
+
+.something-cool {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+}
+
+.input-1 {
+  margin: 10px;
+}
+
+label {
+  font-family: "Permanent Marker", cursive;
+  font-size: 40px;
+}
+
+.last {
+  border: 3px solid lime;
+  background: rgb(162, 0, 255);
+  margin-left: 5vw;
+  width: 22vw;
+  box-shadow: 10px 8px;
+  margin-top: 10px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+}
+
+.last:hover {
+  border: 3px solid rgb(162, 0, 255);
+  background: rgb(38, 255, 85);
+  margin-left: 5vw;
+  width: 22vw;
+  box-shadow: 10px 8px;
+  margin-top: 10px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+  cursor: pointer;
 }

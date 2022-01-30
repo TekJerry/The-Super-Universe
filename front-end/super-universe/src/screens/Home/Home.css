@@ -35,10 +35,12 @@
 
 .desc {
   border: 4px solid black;
-  background: blue;
+  background: url("https://i.imgur.com/wE75xoF.png") bottom left;
   height: 25vh;
   width: 39vw;
   margin: 4px;
+  display: flex;
+  justify-content: center;
 }
 
 .desc img {
@@ -48,19 +50,18 @@
 }
 
 .desc p {
-  position: absolute;
-  top: 44.2%;
   width: 31vw;
-  left: 5%;
-  font-size: 31px;
-  font-weight: 1000;
-  height: 20vh;
-  padding: 3px;
+  font-size: 34px;
+  height: 18vh;
+  color: white;
+  background: purple;
+  border: greenyellow solid 4px;
+  padding: 10px;
 }
 
 .are-you {
   border: 4px solid black;
-  background: red;
+  background: url("https://i.imgur.com/OAjYWT6.jpg");
   height: 25vh;
   width: 59vw;
   margin: 4px;
@@ -81,7 +82,8 @@ p {
 
 .desc2 {
   border: 4px solid black;
-  background: yellow;
+  background: url("https://i.imgur.com/pD1Mymt.jpg") center;
+  background-size: cover;
   height: 25vh;
   width: 59vw;
   margin: 4px;
@@ -89,7 +91,7 @@ p {
 
 .create-your-own {
   border: 4px solid black;
-  background: whitesmoke;
+  background: url("https://i.imgur.com/Bhbccwh.jpg");
   height: 25vh;
   width: 39vw;
   margin: 4px;

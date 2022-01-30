@@ -24,13 +24,13 @@ export default function Home() {
         </div>
         <div className="desc-container">
           <div className="desc">
-            <img src="https://i.imgur.com/CQ7UKwy.png" alt="comic boom" />
-            <p>
-              Hello can you all see this correctly? if not this text would not
-              be visible and unreadable.
+            <p className="hello">
+              Check out our database on Super Heroes and Super Villains!
+              If that is not enough you have the power to create your own Super Hero or Super Villain!
+              What side are you on?
             </p>
           </div>
-          <div className="are-you"><img src="https://i.imgur.com/Ick1jpG.png" alt="comic wow" /></div>
+          <div className="are-you"></div>
         </div>
         <div className="desc2-container">
           <div className="desc2"></div>

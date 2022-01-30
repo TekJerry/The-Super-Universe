@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./SignIn.css";
 import { logIn } from '../../services/services';
 import { useNavigate } from "react-router-dom";
+import Layout from "../../components/Layout/Layout";
 
 export default function SignIn({ setLoggedIn }) {
   const navigate = useNavigate();
@@ -40,29 +41,39 @@ export default function SignIn({ setLoggedIn }) {
   const { username, password } = form;
 
   return (
-    <div className="form-container">
-      <h3>Log In</h3>
-      <form onSubmit={handleLogin}>
+    <Layout>
+    <div className="sign-container">
+    <div className="sign-in">
+      <h3 className="log-in">Log In</h3>
+          <form className="something-cool" onSubmit={handleLogin}>
+            <div className="input-1">
         <label>Username</label>
         <input
+        className="create-input"
           required
           type="text"
           name="username"
           value={username}
           placeholder="Enter Username"
           onChange={handleChange}
-        />
+              />
+            </div>
+            <div className="input-1">
         <label>Password</label>
         <input
+        className="create-input"
           required
           name="password"
           value={password}
           type="password"
           placeholder="Password"
           onChange={handleChange}
-        />
-        <button type='submit'>Submit</button>
+              />
+            </div>
+        <button className="last" type='submit'>Submit</button>
       </form>
-    </div>
+      </div>
+      </div>
+    </Layout>
   );
 }
