@@ -1,0 +1,57 @@
+.edit-container {
+  background: url("https://i.imgur.com/LPWl9br.jpg") no-repeat center bottom;
+  height: 80vh;
+  border: 6px solid black;
+  margin: 5px;
+  background-size: cover;
+}
+
+.input {
+  margin: 10px;
+  height: 4vh;
+  width: 22vw;
+  font-size: 25px;
+  font-family: "Permanent Marker", cursive;
+  box-shadow: 10px 8px;
+}
+
+.edit-character-title {
+  font-size: 50px;
+  font-family: "Permanent Marker", cursive;
+  color: whitesmoke;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.fill-character-data {
+  font-size: 30px;
+  font-family: "Permanent Marker", cursive;
+  color: whitesmoke;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.edit-characters {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.edit-btn {
+  border: 3px solid rgb(224, 243, 54);
+  background: rgb(173, 25, 5);
+  margin-left: 5vw;
+  width: 10vw;
+  box-shadow: 10px 8px;
+  margin-top: 10px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+}
+
+.edit-btn:hover {
+  background: rgb(224, 243, 54);
+  border: 3px solid rgb(173, 25, 5);
+  cursor: pointer;
+}

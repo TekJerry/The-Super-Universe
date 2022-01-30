@@ -2,6 +2,7 @@ import React from 'react';
 import { deleteCharacter } from '../../services';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import "./Delete.css"
 
 export default function Delete() {
 

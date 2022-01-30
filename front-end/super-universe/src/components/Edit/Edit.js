@@ -48,13 +48,13 @@ export default function Edit() {
 
   return (
     <Layout>
-      <div>
+      <div className="edit-container">
       <form className="edit-characters" onSubmit={handleSubmit}>
         <h1 className='edit-character-title'>Edit Character</h1>
-        <h5>Fill in the form below to make changes to a character.</h5>
+        <h5 className="fill-character-data">Fill in the form below to make changes to a character.</h5>
         <input
         type="text"
-          className="code-name-input"
+          className="input"
           placeholder="Update Code Name"
           value={character.code_name}
           name="code_name"
@@ -62,7 +62,7 @@ export default function Edit() {
         />
         <input
         type="text"
-          className="weapon-input"
+          className="input"
           placeholder="Update weapon"
           value={character.weapon}
           name="weapon"
@@ -70,7 +70,7 @@ export default function Edit() {
         />
         <input
         type="text"
-          className="fight-ability-input"
+          className="input"
           placeholder="Update fight ability"
           value={character.fight_ability}
           name="fight_ability"
@@ -78,7 +78,7 @@ export default function Edit() {
         />
         <input
         type="text"
-          className="real-name-input"
+          className="input"
           placeholder="Update Real Name"
           value={character.real_name}
           name="real_name"
@@ -86,7 +86,7 @@ export default function Edit() {
         />
         <input
         type="text"
-          className="dob-input"
+          className="input"
           placeholder="Update Date of birth"
           value={character.dob}
           name="dob"
@@ -94,7 +94,7 @@ export default function Edit() {
         />  
         <input
         type="text"
-          className="img-url-input"
+          className="input"
           placeholder="Update Character Image"
           value={character.img_url}
           name="img_url"
@@ -102,7 +102,7 @@ export default function Edit() {
           />  
           <input
           type="text"
-          className="is-villan-input"
+          className="input"
           placeholder="Update Is Character A Villain"
           value={character.is_villain}
           name="is_villain"
@@ -110,7 +110,7 @@ export default function Edit() {
           />  
           <input
           type="text"
-          className="is-hero-input"
+          className="input"
           placeholder="Update Is Character A Villain"
           value={character.is_hero}
           name="is_hero"
@@ -118,7 +118,7 @@ export default function Edit() {
           />  
           <input
           type="text"
-          className="background-input"
+          className="input"
           placeholder="Update Character Background"
           value={character.background}
           name="background"
@@ -126,13 +126,13 @@ export default function Edit() {
           />  
           <input
           type="text"
-          className="origin-input"
+          className="input"
           placeholder="Update Item Origin"
           value={character.origin}
           name="origin"
           onChange={(e) => handleChange(e)}
           /> 
-        <button type="submit">edit</button>  
+        <button className="edit-btn" type="submit">edit</button>  
         </form>
         <Delete/>
 

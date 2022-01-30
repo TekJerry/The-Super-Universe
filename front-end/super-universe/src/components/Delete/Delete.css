@@ -1,0 +1,33 @@
+.button {
+  height: 10vh;
+  width: 40vw;
+  border: 3px solid rgb(224, 243, 54);
+  background: url("https://i.imgur.com/e2bzFQk.png") no-repeat right center,
+    url("https://i.imgur.com/yDGNazU.png") no-repeat top left,
+    url("https://i.imgur.com/C44EuSJ.jpg") no-repeat center;
+  background-size: 8vw 9vh, 9vw 11vh, 40vw 50vh;
+  box-shadow: 10px 8px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+  font-size: 70px;
+}
+
+.delete-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.button:hover {
+  height: 10vh;
+  width: 40vw;
+  border: 3px solid rgb(224, 243, 54);
+  background: url("https://i.imgur.com/e2bzFQk.png") no-repeat right center,
+    url("https://i.imgur.com/yDGNazU.png") no-repeat top left,
+    url("https://i.imgur.com/C44EuSJ.jpg") no-repeat center;
+  background-size: 8vw 9vh, 9vw 11vh, 40vw 50vh;
+  box-shadow: 10px 8px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+  font-size: 70px;
+}
