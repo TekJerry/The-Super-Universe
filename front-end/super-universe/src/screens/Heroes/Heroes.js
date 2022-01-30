@@ -29,9 +29,10 @@ console.log(codeName)
     <Layout>
       <div className="big-container-hero">
         <div className="left-container-hero">
-          <div className="search">
+          <div className="search-hero">
             {" "}
             <input
+              className="search-bar-hero"
               type="text"
               placeholder="Search..."
               onChange={(e) => {
@@ -53,7 +54,7 @@ console.log(codeName)
                 .map((val, key) => {
                   return (
                     <div className="relative-search" key={key}>
-                      <div key={val.id}>
+                      <div className="result-links" key={val.id}>
                         <button className="results-search" onClick={(e) => handleClick(e, val)}>
                           {val.code_name}
                         </button>
