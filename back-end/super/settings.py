@@ -37,7 +37,7 @@ else:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['super-database.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['super-database.herokuapp.com', 'localhost', ]
 
 
 # Application definition
@@ -163,4 +163,4 @@ REST_FRAMEWORK= {
 }
 
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:3000", "http://localhost:3001"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:3000", "http://localhost:3001", "https://61f70bdacb2dcf7e227cd2c7--cocky-noether-81384f.netlify.app/"]
