@@ -67,13 +67,19 @@
 
 .question {
   font-size: 22px;
-  margin-top: 3vh;
-  height: 6vh;
+  height: 2vh;
 }
 
 .answer {
   font-size: 30px;
   color: green;
+}
+.background p {
+  margin-top: 3vh;
+}
+
+.origin p {
+  margin-top: 8vh;
 }
 
 .background span {
@@ -93,6 +99,11 @@
   font-size: 18px;
   font-family: "Permanent Marker", cursive;
   box-shadow: 10px 5px;
+}
+
+.facts {
+  border: 2px solid green;
+  height: 60vh;
 }
 
 @media only screen and (max-width: 1000px) {

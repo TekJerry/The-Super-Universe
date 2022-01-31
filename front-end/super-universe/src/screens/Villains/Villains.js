@@ -70,7 +70,8 @@ export default function Villains() {
             <div className="villain-details">  
           <div className="hero-img">
             <img src={codeName.img_url} alt="villain goes here" />
-          </div>
+              </div>
+              <div className="pls-work">
           <div className="facts">
             <div className="name"><p className="question">Villain Code Name: <span className="answer">{codeName.code_name}</span></p> </div>
             <div className="weapon"><p className="question">Favorite Weapon: <span className="answer">{codeName.weapon}</span></p></div>
@@ -79,12 +80,13 @@ export default function Villains() {
             <div className="dob"><p className="question">Date of Birth: <span className="answer">{codeName.dob}</span></p></div>
             <div className="background"><p className="question">Background Story: <span className="answer">{codeName.background}</span></p></div>
             <div className="origin"><p className="question">Origin Story: <span className="answer">{codeName.origin}</span></p></div>
-            <div className="multiple-btn">
+              </div>
+              <div className="multiple-btn">
               <Link to={`/character/edit/${codeName.id}`}>
                 <button className="edit-character">Edit Character</button>
               </Link>
-            </div>
-                </div>
+            </div></div>
+                
                 </div>
             : <div className="villain-details"></div> }
       </div>
