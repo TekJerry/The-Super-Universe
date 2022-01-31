@@ -22,3 +22,5 @@ The Super Universe is an application where you'll be able to search your favorit
 - Full crud available for both my models
 - Set my paths with which my front end would be communicating with
 
+# Data
+![Data](https://i.imgur.com/buhSvZA.png)
