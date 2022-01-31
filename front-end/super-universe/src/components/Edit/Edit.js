@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { getCharacter, updateCharacter } from "../../services/index";
 import Delete from "../Delete/Delete";
 import Layout from "../Layout/Layout";
@@ -21,6 +21,7 @@ export default function Edit() {
   });
 
   const params = useParams()
+  const navigate = useNavigate()
   
   useEffect(() => {
     const findCharacter = async () => {
@@ -36,6 +37,7 @@ export default function Edit() {
     e.preventDefault()
     console.log(params.id, character)
     await updateCharacter(params.id, character)
+    navigate("/");
   }
 
   const handleChange = (e) => {
