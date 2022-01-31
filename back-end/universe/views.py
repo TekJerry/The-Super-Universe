@@ -16,5 +16,3 @@ class CharacterViewSet(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ModelViewSet):
   queryset = User.objects.all()
   serializer_class = UserSerializer
-  authentication_classes = []
-  permission_classes =[permissions.AllowAny]
