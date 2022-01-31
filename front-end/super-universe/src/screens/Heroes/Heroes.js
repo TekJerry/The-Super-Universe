@@ -80,10 +80,13 @@ console.log(codeName)
             <div className="fight-ability"><p className="question">Fighting Ability: <span className="answer">{codeName.fight_ability}</span></p></div>
             <div className="real-name"><p className="question">Real Name: <span className="answer">{codeName.real_name}</span></p></div>
             <div className="dob"><p className="question">Date of Birth: <span className="answer">{codeName.dob}</span></p></div>
+            <div className="publish"><p className="question">Publisher: <span className="answer"> {codeName.publisher}</span></p></div>
             <div className="background"><p className="question">Background Story: <span className="answer">{codeName.background}</span></p></div>
             <div className="origin"><p className="question">Origin Story: <span className="answer">{codeName.origin}</span></p></div>
+            
                 </div>
                 <div className="multiple-btn">
+                 
               <Link to={`/character/edit/${codeName.id}`}>
                 <button className="edit-character">Edit Character</button>
               </Link>

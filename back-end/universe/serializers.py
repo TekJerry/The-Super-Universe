@@ -9,6 +9,7 @@ class PublisherSerializer(serializers.HyperlinkedModelSerializer):
     fields = ['id','company', 'img_url', 'founded', 'founder', 'characters']
 
 class CharacterSerializer(serializers.HyperlinkedModelSerializer):
+  publisher = serializers.StringRelatedField(many=False, read_only=True)
   class Meta: 
     model = Character
     fields = ['id','code_name', 'weapon', 'fight_ability', 'real_name', 'dob', 'img_url', 'is_villain', 'is_hero', 'background', 'origin', 'publisher']
