@@ -37,7 +37,7 @@ else:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['super-database.herokuapp.com', 'localhost', ]
+ALLOWED_HOSTS = ['super-database.herokuapp.com', 'localhost', 'cocky-noether-81384f.netlify.app' ]
 
 
 # Application definition
@@ -189,4 +189,4 @@ SIMPLE_JWT = {
 }
 
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:3000", "http://localhost:3001", "https://cocky-noether-81384f.netlify.app"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:3000", "http://localhost:3001", "https://cocky-noether-81384f.netlify.app", "http://localhost:8000", "http://localhost:8001" ]
