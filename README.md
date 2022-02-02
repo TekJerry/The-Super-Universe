@@ -9,3 +9,24 @@ The Super Universe is an application where you'll be able to search your favorit
 
 # React Components Heirarchy
 - [Click Here](https://whimsical.com/component-hierarchy-JTVRZ35V31oro5GcV6wCut)
+
+
+# MVP 
+
+## FRONT-END
+- Api request communicating with my back end using axios
+- React components with routes communicating with each other
+- Authentication done in the front-end to be able to look and edit data through the front end
+
+## BACK-END
+- Full crud available for both my models
+- Set my paths with which my front end would be communicating with
+
+# Api Endpoints
+- /characters
+- /characters/id
+- /publishers
+- /publishers/id
+
+# Data
+![Data](https://i.imgur.com/buhSvZA.png)
